@@ -1,11 +1,13 @@
 {
   "name": "vue-daum-map",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "src/VueDaumMap.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --mode development",
+    "start": "npm run dev",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,9 @@
   ],
   "author": "punchto@gmail.com",
   "license": "ISC",
+  "dependencies": {
+    "load-script": "^1.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
